@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="js/script.js"></script>
     <nav>
         <img src="assets/logoElmwood.png" alt="logo" class="logo">
         <ul class="nav-items">
@@ -46,26 +47,31 @@
     <div class="messageUs">
         <div>
             <h2>Message Us</h2>
-            <form action="/action_page.php">
-                <label for="name">Nama :</label>
-                <input type="text" id="name" name="name" placeholder="nama" size="33"><br>
-                <label for="birthdate">Tanggal Lahir :</label>
-                <input type="date" id="birthdate" name="birthdate""><br>
-                <label for="birthdate">Jenis Kelamin :</label>
-                <input type="radio" id="laki" name="gender" value="Laki Laki" class="gender">
-                <label for="laki">Laki Laki</label>
-                <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
-                <label for="perempuan">Perempuan</label><br>
-                <div class="pesan">Pesan :
-                    <textarea id="message" name="message" placeholder="pesan"></textarea><br>
-                </div>
-                <input type="submit" value="Submit" class="button">
-                <input type="reset" value="Reset" class="button">
-            </form>
+            <label for="name">Nama :</label>
+            <input type="text" id="name" name="name" placeholder="nama" size="33"><br>
+            <label for="birthdate">Tanggal Lahir :</label>
+            <input type="date" id="birthdate" name="birthdate""><br>
+            <label for="gender">Jenis Kelamin :</label>
+            <input type="radio" id="laki" name="gender" value="Laki Laki" class="gender">
+            <label for="laki">Laki Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
+            <label for="perempuan">Perempuan</label><br>
+            <div class="pesan">Pesan :
+                <textarea id="message" name="message" placeholder="pesan"></textarea><br>
+            </div>
+            <div class="buttons">
+                <button id="submit" class="submit" onclick="getAll()">Submit</button>
+                <button class="reset" onclick="resetAll()">Reset</button>
+            </div>
         </div>
         <div id="showResult">
-            
-        </div>       
+            <strong class="result">Current Time : </strong> <p id="waktu"></p><br>
+            <br>
+            <strong class="result">Nama : </strong> <p id="nama"></p><br>
+            <strong class="result">Tanggal Lahir : </strong> <p id="lahir"></p><br>
+            <strong class="result">Jenis Kelamin : </strong> <p id="kelamin"></p><br>
+            <strong class="result">Pesan : </strong> <p id="pesan"></p><br>
+        </div>
     </div>
 </body>
 </html>

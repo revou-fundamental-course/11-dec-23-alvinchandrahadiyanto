@@ -80,10 +80,6 @@ input {
     justify-content: space-between;
 }
 
-.button{
-    margin-top: 2vh;
-}
-
 .pesan{
     display: flex;
     flex-flow: row wrap;
@@ -96,7 +92,35 @@ input {
     margin-left: 10ch;
 }
 
+/* BUTTON SECTION */
+
+.buttons{
+    margin-top: 2vh;
+}
+
+.reset{
+    background-color: rgb(195, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color: rgb(171, 0, 0);
+}
+
+.reset:focus{
+    background-color: rgb(101, 0, 0);
+    transform: translateY(5px);
+}
+
 /* RESULT SECTION */
+
+.result{
+    
+}
 
 #showResult{
     width: 60vh;
