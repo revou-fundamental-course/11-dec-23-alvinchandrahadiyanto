@@ -75,7 +75,7 @@ input {
 
 .messageUs{
     margin-bottom: 2vh;
-    margin-left: 15ch;
+    margin-left: 20ch;
     display: flex;
     justify-content: space-between;
 }
@@ -102,4 +102,5 @@ input {
     width: 60vh;
     height: 40vh;
     border: 2px solid black;
+    margin: auto;
 }
