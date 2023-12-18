@@ -99,6 +99,24 @@ input {
     margin-top: 2vh;
 }
 
+.submit{
+    background-color: rgb(67, 101, 234);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(51, 76, 178);
+}
+
+.submit:focus{
+    background-color: rgb(36, 53, 122);
+    transform: translateY(5px);
+}
+
 .reset{
     background-color: rgb(195, 0, 0);
     color: white;

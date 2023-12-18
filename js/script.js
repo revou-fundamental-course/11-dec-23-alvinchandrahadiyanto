@@ -18,8 +18,11 @@ function getAll(){
 function resetAll(){ 
     document.getElementById("name").value = null; 
     document.getElementById("birthdate").value = null; 
-    document.getElementById("gender").value = null;  
-    document.getElementById("message").value = null;
+    var ele = document.querySelectorAll("input[name=gender]");
+    for(var i=0;i<ele.length;i++){
+        ele[i].checked = false;
+    }
+    document.getElementById("message").value = "";
     document.getElementById("waktu").innerHTML = null;
     document.getElementById("nama").innerHTML = null;
     document.getElementById("lahir").innerHTML = null;
