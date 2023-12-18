@@ -74,6 +74,7 @@ input {
 }
 
 .messageUs{
+    margin-top: 5vh;
     margin-bottom: 2vh;
     margin-left: 20ch;
     display: flex;
@@ -119,12 +120,14 @@ input {
 /* RESULT SECTION */
 
 .result{
-    
+    margin-top: 5vh;
+    margin-left: 5ch;
 }
 
 #showResult{
-    width: 60vh;
-    height: 40vh;
+    width: 60ch;
+    height: 50vh;
     border: 2px solid black;
     margin: auto;
+    margin-top: 5vh;
 }
