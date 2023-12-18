@@ -1,9 +1,10 @@
 function getAll(){ 
+    const date = new Date();
     var name=document.getElementById("name").value; 
     var birthdate=document.getElementById("birthdate").value; 
     var gender=document.querySelector('input[name="gender"]:checked').value;
     var message=document.getElementById("message").value;
-    var time = "<strong >Current Time : </strong> ";
+    var time = "<strong >Current Time : </strong> "+date;
     name = "<strong>Nama : </strong>"+name;
     birthdate="<strong >Tanggal Lahir : </strong>"+birthdate;
     gender="<strong>Jenis Kelamin : </strong>"+gender;
