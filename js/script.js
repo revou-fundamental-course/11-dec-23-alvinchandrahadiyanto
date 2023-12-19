@@ -1,22 +1,25 @@
 function getAll(){
-    if (!document.querySelector('input[name="gender"]:checked')) {
-        alert('Data tidak boleh ada yang kosong');
-        return false;
-    }
+      // Check individual fields
     const date = new Date();
-    var name=document.getElementById("name").value; 
-    var birthdate=document.getElementById("birthdate").value; 
-    var gender=document.querySelector('input[name="gender"]:checked').value;
-    var message=document.getElementById("message").value;
-    var time = "<strong>Current Time : </strong> "+date;
-    if(name===null || birthdate===null || message===""){
-        alert("Data tidak boleh ada yang kosong");
+    const name = document.getElementById("name").value;
+    const birthdate = document.getElementById("birthdate").value;
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const message = document.getElementById("message").value;
+    const time = date;
+
+    // Build an array of missing fields
+    const missingFields = [];
+
+    if (!name) missingFields.push('Nama');
+    if (!birthdate) missingFields.push('Tanggal Lahir');
+    if (!gender) missingFields.push('Jenis Kelamin');
+    if (!message) missingFields.push('Pesan');
+
+    if (missingFields.length) {
+        const messageText = `Please fill in the following fields: ${missingFields.join(', ')}`;
+        alert(messageText);
         return false;
     } else {
-        name = "<strong>Nama : </strong>"+name;
-        birthdate="<strong>Tanggal Lahir : </strong>"+birthdate;
-        gender="<strong>Jenis Kelamin : </strong>"+gender;
-        message="<strong>Pesan : </strong>"+message;
         document.getElementById("waktu").innerHTML = time;
         document.getElementById("nama").innerHTML = name;
         document.getElementById("lahir").innerHTML = birthdate;
