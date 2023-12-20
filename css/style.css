@@ -23,6 +23,11 @@ nav{
     margin-right: 20px;
 }
 
+.nav-items li > a {
+    text-decoration: none;
+    color: black;
+}
+
 header{
     text-align: center;
 }
