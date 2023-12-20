@@ -20,6 +20,7 @@ function getAll(){
         alert(messageText);
         return false;
     } else {
+        document.getElementById("greet").innerHTML = "Hi, "+name+ " Welcome to website";
         document.getElementById("waktu").innerHTML = time;
         document.getElementById("nama").innerHTML = name;
         document.getElementById("lahir").innerHTML = birthdate;
