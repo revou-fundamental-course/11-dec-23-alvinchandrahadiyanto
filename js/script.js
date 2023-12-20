@@ -51,7 +51,7 @@ function getAll(){
         document.getElementById("waktu").innerHTML = time;
         document.getElementById("nama").innerHTML = name;
         document.getElementById("lahir").innerHTML = birthdate;
-        document.getElementById("kelamin").innerHTML = gender;
+        document.getElementById("kelamin").innerHTML = gender.value;
         document.getElementById("pesan").innerHTML = message;
         return true;
     }

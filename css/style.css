@@ -244,7 +244,7 @@ input:focus{
 /* RESULT SECTION */
 
 #showResult{
-    width: 65ch;
+    width: 70ch;
     height: 35vh;
     border: 2px solid black;
     margin: auto;
