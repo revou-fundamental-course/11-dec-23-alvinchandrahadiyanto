@@ -3,15 +3,46 @@ body{
 }
 
 .logo{
-    width: 15vh;
-    height: 12vh;
+    width: 0;
+    height: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .logo{
+        width: 0;
+        height: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .logo{
+        width: 15vh;
+        height: 12vh;
+    }
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    nav{
+        align-items: center;
+        padding: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
 }
 
 .nav-items{
@@ -20,7 +51,23 @@ nav{
 
 .nav-items li{
     display: inline;
-    margin-right: 20px;
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .nav-items li{
+        display: inline;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .nav-items li{
+        display: inline;
+        margin-right: 20px;
+    }
 }
 
 .nav-items li > a {
@@ -32,10 +79,22 @@ header{
     text-align: center;
 }
 
-header img{
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 2vh;
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    header img{
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    header img{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 2vh;
+    }
 }
 
 /* SLIDESHOW SECTION */
@@ -185,12 +244,25 @@ input:focus{
     border: 5px solid red;
 }
 
-.messageUs{
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 20ch;
-    display: flex;
-    justify-content: space-between;
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .messageUs{
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        margin-left: 5ch;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .messageUs{
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        margin-left: 10ch;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .pesan{
@@ -249,12 +321,29 @@ input:focus{
 
 /* RESULT SECTION */
 
+/* For mobile phones: */
 #showResult{
-    width: 70ch;
     height: 35vh;
-    border: 2px solid black;
-    margin: auto;
     margin-top: 5vh;
-    padding-top: 5vh;
-    padding-left: 5ch;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    #showResult{
+        height: 35vh;
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    #showResult{
+        width: 70ch;
+        height: 35vh;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 5vh;
+        padding-top: 5vh;
+        padding-left: 5ch;
+    }
 }
