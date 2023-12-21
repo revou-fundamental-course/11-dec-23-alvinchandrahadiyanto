@@ -244,6 +244,10 @@ input:focus{
     border: 5px solid red;
 }
 
+.gender{
+    margin-left: 0;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .messageUs{
